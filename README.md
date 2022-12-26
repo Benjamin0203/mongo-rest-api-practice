@@ -16,3 +16,7 @@ This is practice file for mongo api practice
 `npm i --save-dev dotenv nodemon`
 
 - Replace scripts item with `"devStart": "nodemon server.js"` So nodemon will run on `server.js` fil with `node devStart` command.
+
+## Start
+
+run `npm run devStart` to start the server
