@@ -4,8 +4,8 @@ const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
 
-mongoose.set("strictQuery", false);
-mongoose.connect(process.env.DATABASE_URL, { useNewUrlParser: true });
+// mongoose.set("strictQuery", false);
+mongoose.connect(process.env.DATABASE_URL, { useNewUrlParser:true, useUnifiedTopology: true});
 const db = mongoose.connection;
 db.on('error', (error) => console.log(error));
 db.once('open', (error) => console.log('Connected to Database'));
