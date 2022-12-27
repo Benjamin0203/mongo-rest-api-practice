@@ -26,6 +26,7 @@ Obsidian title:
 ## Start
 
 run `npm run devStart` to start the server
+type `http://localhost:3000/subscribers` in the browser
 
 ---
 
